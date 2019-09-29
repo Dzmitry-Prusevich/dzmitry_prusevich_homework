@@ -118,16 +118,9 @@ Number of processes = 25 ( field - 25 requests currently being processed, 0 idle
 
 [logo16]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/10_1.png
 
-![alt text][logo17]
-
-[logo17]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
-
 
 # #TASK 2
 
-![alt text][logo18]
-
-[logo18]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
 
 ## #1 ----
 [root@worker ~]# httpd -M | grep prox
