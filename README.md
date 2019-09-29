@@ -18,106 +18,106 @@ systemctl restart httpd
 [root@worker ~]# systemctl status httpd
 
 
-![alt text][logo]
+![alt text][logo1]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_2.png
+[logo1]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_2.png
 
 
 
 ## #3 Show that httpd is using worker module.
 [root@worker ~]# httpd -V
-![alt text][logo]
+![alt text][logo2]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_3.png
+[logo2]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_3.png
 
 
-![alt text][logo]
+![alt text][logo3]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_4.png
+[logo3]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_4.png
 
 
 ## #4 task
 vim /etc/httpd/conf/httpd.conf 
 
-![alt text][logo]
+![alt text][logo4]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_5.png
+[logo4]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_5.png
 
 
 ab -n 100000 -c 500  http://worker.dzmitry.prusevich/index.html
 tail -f /var/log/httpd/error_log 
-![alt text][logo]
+![alt text][logo5]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_4_1.png
+[logo5]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_4_1.png
 
-![alt text][logo]
+![alt text][logo6]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_7.png
+[logo6]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_7.png
 
 
-![alt text][logo]
+![alt text][logo7]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_9.png
+[logo7]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_9.png
 
 
 
 ## #5 
 Process tree:
-![alt text][logo]
+![alt text][logo8]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5_2.png
+[logo8]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5_2.png
 
-![alt text][logo]
+![alt text][logo9]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5_5.png
+[logo9]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5_5.png
 
 ## #6___7__8
 Prefork:
-![alt text][logo]
+![alt text][logo10]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_1.png
+[logo10]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_1.png
 
-![alt text][logo]
+![alt text][logo11]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_2.png
+[logo11]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_2.png
 
-![alt text][logo]
+![alt text][logo12]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_3.png
+[logo12]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_3.png
 
 
-![alt text][logo]
+![alt text][logo13]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_4.png
+[logo13]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_4.png
 
 ## #9
 
 Before generating ab-requests
-![alt text][logo]
+![alt text][logo14]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/9_1.png
+[logo14]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/9_1.png
 
 After generating 100 000 requests (up to 500 simultaneously):
 Number of processes = 25 ( field - 25 requests currently being processed, 0 idle workers)
-![alt text][logo]
+![alt text][logo15]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/9_2.png
+[logo15]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/9_2.png
 
 ## # 10
-![alt text][logo]
+![alt text][logo16]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/10_1.png
+[logo16]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/10_1.png
 
-![alt text][logo]
+![alt text][logo17]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
+[logo17]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
 
 
 # #TASK 2
 
-![alt text][logo]
+![alt text][logo18]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
+[logo18]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
 
 ## #1 ----
 [root@worker ~]# httpd -M | grep prox
@@ -138,9 +138,9 @@ Number of processes = 25 ( field - 25 requests currently being processed, 0 idle
 
 ## #2-----------
 [root@worker ~]# vim /etc/httpd/conf.modules.d/00-proxy.conf 
-![alt text][logo]
+![alt text][logo19]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5.png
+[logo19]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5.png
 
 
 
@@ -157,24 +157,24 @@ systemctl restart httpd
 
 
 
-![alt text][logo]
+![alt text][logo20]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_4.png
-
-
-
-![alt text][logo]
-
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_3.png
+[logo20]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_4.png
 
 
+
+![alt text][logo21]
+
+[logo21]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_3.png
 
 
 
 
-![alt text][logo]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_9.png
+
+![alt text][logo22]
+
+[logo22]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_9.png
 
 
 ## # 6
@@ -187,7 +187,7 @@ vim /etc/httpd/conf/httpd.conf
 [root@reverse ~]# systemctl restart httpd
 
 
-![alt text][logo]
+![alt text][logo23]
 
-[logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_11.png
+[logo23]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_11.png
 
