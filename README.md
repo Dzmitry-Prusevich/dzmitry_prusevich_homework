@@ -6,16 +6,13 @@
 yum install -y httpd
 
 ###____2
+```
  cat << EOF > /var/www/html/index.html
-
 <h2>Hello from httpd</h2>
-
 <hr />
-
-<p>Created by Name Surname</p>
-
+<p>Created by Dzmitry Prusevich</p>
 EOF
-
+```
 ###____3
 
      sudo systemctl start httpd
