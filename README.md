@@ -14,6 +14,7 @@ vim /etc/httpd/conf.modules.d/00-mpm.conf
 ## #2 ______
 
 vim /etc/httpd/conf/httpd.conf 
+
 systemctl restart httpd
 [root@worker ~]# systemctl status httpd
 
