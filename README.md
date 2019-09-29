@@ -1,6 +1,6 @@
-#TASK1
+# TASK1
 
-###1____
+## #1____
 
 vim /etc/httpd/conf.modules.d/00-mpm.conf 
 
@@ -11,7 +11,7 @@ vim /etc/httpd/conf.modules.d/00-mpm.conf
 
 [root@worker ~]# vim /etc/httpd/modules/mod_mpm_worker.so 
 
-###2 ______
+## #2 ______
 
 vim /etc/httpd/conf/httpd.conf 
 systemctl restart httpd
@@ -24,7 +24,7 @@ systemctl restart httpd
 
 
 
-###3 Show that httpd is using worker module.
+## #3 Show that httpd is using worker module.
 [root@worker ~]# httpd -V
 ![alt text][logo]
 
@@ -36,7 +36,7 @@ systemctl restart httpd
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/1_4.png
 
 
-###4 task
+## #4 task
 vim /etc/httpd/conf/httpd.conf 
 
 ![alt text][logo]
@@ -61,7 +61,7 @@ tail -f /var/log/httpd/error_log
 
 
 
-###5 
+## #5 
 Process tree:
 ![alt text][logo]
 
@@ -71,7 +71,7 @@ Process tree:
 
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/5_5.png
 
-###6___7__8
+## #6___7__8
 Prefork:
 ![alt text][logo]
 
@@ -90,7 +90,7 @@ Prefork:
 
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/6_4.png
 
-###9
+## #9
 
 Before generating ab-requests
 ![alt text][logo]
@@ -103,7 +103,7 @@ Number of processes = 25 ( field - 25 requests currently being processed, 0 idle
 
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/9_2.png
 
-### 10
+## # 10
 ![alt text][logo]
 
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/10_1.png
@@ -113,13 +113,13 @@ Number of processes = 25 ( field - 25 requests currently being processed, 0 idle
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
 
 
-#TASK 2
+# #TASK 2
 
 ![alt text][logo]
 
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/
 
-###1 ----
+## #1 ----
 [root@worker ~]# httpd -M | grep prox
 [Fri Sep 27 19:38:29.787566 2019] [so:warn] [pid 5315] AH01574: module mpm_prefork_module is already loaded, skipping
 [Fri Sep 27 19:38:29.787634 2019] [so:warn] [pid 5315] AH01574: module status_module is already loaded, skipping
@@ -136,7 +136,7 @@ Number of processes = 25 ( field - 25 requests currently being processed, 0 idle
  proxy_wstunnel_module (shared)
 
 
-###2-----------
+## #2-----------
 [root@worker ~]# vim /etc/httpd/conf.modules.d/00-proxy.conf 
 ![alt text][logo]
 
@@ -144,7 +144,7 @@ Number of processes = 25 ( field - 25 requests currently being processed, 0 idle
 
 
 
-###3___4___5
+## #3___4___5
 
 vim /etc/httpd/conf.d/frd-proxy.conf 
 vim /etc/httpd/conf/httpd.conf 
@@ -177,7 +177,7 @@ systemctl restart httpd
 [logo]:https://github.com/Dzmitry-Prusevich/dzmitry_prusevich_homework/blob/apache_day2/11_9.png
 
 
-### 6
+## # 6
 
 hostnamectl set-hostname reverse.dzmitry.prusevich
 vim /etc/httpd/conf/httpd.conf 
